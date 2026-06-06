@@ -1,4 +1,4 @@
-# 4779
+# harmless
 
 [![Zola](https://img.shields.io/badge/Zola-0.22.1+-blue?logo=rust)](https://getzola.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -17,13 +17,13 @@ interactive force-directed graph of your entire site.
 
 ```bash
 cd your-site/themes
-git clone https://github.com/e4779/zola-harmless.git 4779
+git clone https://github.com/e4779/zola-harmless.git harmless
 ```
 
-Add `theme = "4779"` to your site's `config.toml`:
+Add `theme = "harmless"` to your site's `config.toml`:
 
 ```toml
-theme = "4779"
+theme = "harmless"
 ```
 
 ---

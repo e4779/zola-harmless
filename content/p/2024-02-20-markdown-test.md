@@ -4,7 +4,7 @@ date = 2024-02-20
 +++
 
 This post demonstrates **all** the main Markdown features supported by the
-Zola 4779 theme. It builds on ideas from the first post
+Zola Harmless theme. It builds on ideas from the first post
 [«Hello, World»](/p/hello-world/).
 
 ## Text and emphasis

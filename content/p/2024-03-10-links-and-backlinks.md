@@ -3,7 +3,7 @@ title = "Links and Backlinks"
 date = 2024-03-10
 +++
 
-This post is about the **backlinks system** in the Zola 4779 theme.
+This post is about the **backlinks system** in the Zola Harmless theme.
 Backlinks automatically collect all pages that link to the current page
 and display them in the sidebar or footer.
 

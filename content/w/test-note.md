@@ -8,7 +8,7 @@ and cross-references between site sections.
 
 ## Site sections
 
-The Zola 4779 theme supports two main content sections:
+The Zola Harmless theme supports two main content sections:
 
 1. **Blog** (`/p/`) — chronological posts
 2. **Wiki** (`/w/`) — topical notes

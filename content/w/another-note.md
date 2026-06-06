@@ -10,7 +10,7 @@ of connected pages for testing the link graph.
 ## About this note
 
 This note doesn't have a specific topic — it serves as an **anchor**
-for verifying the backlinks mechanism in the Zola 4779 theme.
+for verifying the backlinks mechanism in the Zola Harmless theme.
 
 ### What we're checking
 
