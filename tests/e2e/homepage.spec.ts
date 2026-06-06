@@ -8,20 +8,20 @@ test.describe('Homepage', () => {
 
   test('has navigation to sections', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('nav a:has-text("блог")')).toBeVisible();
-    await expect(page.locator('nav a:has-text("заметки")')).toBeVisible();
-    await expect(page.locator('nav a:has-text("граф")')).toBeVisible();
+    await expect(page.locator('nav a:has-text("blog")')).toBeVisible();
+    await expect(page.locator('nav a:has-text("notes")')).toBeVisible();
+    await expect(page.locator('nav a:has-text("graph")')).toBeVisible();
   });
 
   test('nav links work', async ({ page }) => {
     await page.goto('/');
-    await page.click('nav a:has-text("блог")');
+    await page.click('nav a:has-text("blog")');
     await expect(page).toHaveURL(/\/p\//);
     await page.goto('/');
-    await page.click('nav a:has-text("заметки")');
+    await page.click('nav a:has-text("notes")');
     await expect(page).toHaveURL(/\/w\//);
     await page.goto('/');
-    await page.click('nav a:has-text("граф")');
+    await page.click('nav a:has-text("graph")');
     await expect(page).toHaveURL(/\/graph\//);
   });
 });

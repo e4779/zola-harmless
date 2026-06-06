@@ -5,7 +5,7 @@ test.describe('Responsive design', () => {
     await page.setViewportSize({ width: 375, height: 667 });
     await page.goto('/');
     await expect(page.locator('nav')).toBeVisible();
-    await expect(page.locator('nav a:has-text("блог")')).toBeVisible();
+    await expect(page.locator('nav a:has-text("blog")')).toBeVisible();
   });
 
   test('content does not overflow on mobile', async ({ page }) => {

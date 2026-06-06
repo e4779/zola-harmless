@@ -1,22 +1,21 @@
 +++
-title = "Zola 4779 — Демо-сайт"
-description = "Демонстрационная версия темы Zola 4779 с контентом на русском языке"
+title = "Zola 4779 — Demo Site"
+description = "Demo version of the Zola 4779 theme with English content"
 sort_by = "date"
 +++
 
-Добро пожаловать на демонстрационный сайт темы **Zola 4779**. Здесь вы найдёте примеры
-всех возможностей темы: блог, вики-заметки, систему обратных ссылок и многое другое.
+Welcome to the demo site for the **Zola 4779** theme. Here you'll find examples of
+all the theme's features: blog, wiki notes, a backlink system, and more.
 
-Этот сайт создан с помощью [Zola](https://www.getzola.org/) — быстрого генератора
-статических сайтов, написанного на Rust. Тема **4779** предлагает минималистичный,
-но функциональный дизайн, ориентированный на *цифровые сады* (digital gardens)
-и личные заметки.
+This site is built with [Zola](https://www.getzola.org/) — a fast static site
+generator written in Rust. The **4779** theme offers a minimal yet
+functional design focused on *digital gardens* and personal notes.
 
-## Что вы найдёте на этом сайте
+## What you'll find on this site
 
-- **Блог** — раздел `/p/` с заметками и статьями
-- **Вики-заметки** — раздел `/w/` с перекрёстными ссылками
-- **Обратные ссылки** — автоматически собранные ссылки на каждой странице
-- **Полная поддержка Markdown** — таблицы, сноски, код, изображения
+- **Blog** — the `/p/` section with posts and articles
+- **Wiki notes** — the `/w/` section with cross-referenced notes
+- **Backlinks** — automatically collected links on each page
+- **Full Markdown support** — tables, footnotes, code, images
 
-Начните с раздела [Блог](/p/) или перейдите сразу к [вики-заметкам](/w/).
+Start with the [Blog](/p/) section or jump straight to [wiki notes](/w/).

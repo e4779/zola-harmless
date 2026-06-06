@@ -1,42 +1,42 @@
 +++
-title = "Ещё одна заметка"
+title = "Another Note"
 date = 2024-02-05
 +++
 
-Это **вторая вики-заметка**, которая дополняет первую
-([«Тестовая заметка»](/w/test-note/)). Вместе они образуют небольшой кластер
-связанных страниц для тестирования графа ссылок.
+This is a **second wiki note**, complementing the first one
+([«Test Note»](/w/test-note/)). Together they form a small cluster
+of connected pages for testing the link graph.
 
-## Тема заметки
+## About this note
 
-В этой заметке нет какой-то определённой темы — она служит **якорем**
-для проверки механизма обратных ссылок в теме Zola 4779.
+This note doesn't have a specific topic — it serves as an **anchor**
+for verifying the backlinks mechanism in the Zola 4779 theme.
 
-### Что проверяем
+### What we're checking
 
-- Появляется ли ссылка на эту страницу на странице **Тестовая заметка**
-- Отображаются ли обратные ссылки корректно
-- Работает ли навигация между вики-заметками
+- Whether a link to this page appears on the **Test Note** page
+- Whether backlinks display correctly
+- Whether navigation between wiki notes works
 
-## Примеры Markdown
+## Markdown examples
 
-*Курсив* и **жирный текст**.
+*Italic* and **bold text**.
 
-Нумерованный список:
+Numbered list:
 
-1. Создать контент
-2. Проверить ссылки
-3. Наслаждаться результатом
+1. Create content
+2. Check links
+3. Enjoy the result
 
-Блок цитаты:
+Blockquote:
 
-> Хорошая архитектура информации незаметна.
-> Плохая — разрушает пользовательский опыт.
+> Good information architecture is invisible.
+> Bad information architecture destroys user experience.
 
-## Код
+## Code
 
 ```rust
-// Простая структура для заметки
+// A simple struct for a note
 struct Note {
     title: String,
     slug: String,

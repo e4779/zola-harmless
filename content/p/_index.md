@@ -1,8 +1,8 @@
 +++
-title = "Блог"
+title = "Blog"
 sort_by = "date"
 template = "section.html"
 page_template = "post.html"
 +++
 
-Записи блога в хронологическом порядке — от новых к старым.
+Blog posts in chronological order — newest first.

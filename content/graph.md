@@ -1,7 +1,7 @@
 +++
-title = "Граф"
+title = "Graph"
 date = 2024-01-01
 template = "graph.html"
 +++
 
-Граф связей между страницами сайта. Каждый узел — страница, каждое ребро — ссылка.
+A graph of connections between pages on this site. Each node is a page, each edge is a link.

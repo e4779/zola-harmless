@@ -17,6 +17,6 @@ test.describe('Wiki section', () => {
 
   test('note has backlinks', async ({ page }) => {
     await page.goto('/w/test-note/');
-    await expect(page.locator('h3:has-text("Ссылки сюда")')).toBeVisible();
+    await expect(page.locator('h3:has-text("Backlinks")')).toBeVisible();
   });
 });

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "macros/translate.html" as macros %}
 
 {% block title %}{{ page.title }} — {{ config.title }}{% endblock %}
 
@@ -25,10 +26,10 @@
                 {{ page.date | date(format="%d.%m.%Y") }}
             </time>
             {% if page.updated and page.updated != page.date %}
-            · обновлено {{ page.updated | date(format="%d.%m.%Y") }}
+            · {{ macros::translate(key="updated", default="updated") }} {{ page.updated | date(format="%d.%m.%Y") }}
             {% endif %}
             {% if page.reading_time %}
-            · {{ page.reading_time }} мин. чтения
+            · {{ page.reading_time }} {{ macros::translate(key="reading_time", default="min read") }}
             {% endif %}
         </div>
     </header>
@@ -36,7 +37,7 @@
 
     {% if page.toc %}
     <details>
-        <summary>Оглавление</summary>
+        <summary>{{ macros::translate(key="toc", default="Table of Contents") }}</summary>
         <ul>
             {% for h1 in page.toc %}
             <li><a href="{{ h1.permalink }}">{{ h1.title }}</a>

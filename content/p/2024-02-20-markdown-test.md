@@ -1,88 +1,88 @@
 +++
-title = "Возможности Markdown"
+title = "Markdown Features"
 date = 2024-02-20
 +++
 
-Этот пост демонстрирует **все** основные возможности Markdown, которые
-поддерживаются темой Zola 4779. За основу взяты идеи из первого поста
-[«Привет, мир»](/p/hello-world/).
+This post demonstrates **all** the main Markdown features supported by the
+Zola 4779 theme. It builds on ideas from the first post
+[«Hello, World»](/p/hello-world/).
 
-## Текст и выделение
+## Text and emphasis
 
-Обычный текст. **Жирный текст**. *Курсив*. ~~Зачёркнутый текст~~.
-***Жирный курсив***. А также `inline code` в середине предложения.
+Normal text. **Bold text**. *Italic*. ~~Strikethrough~~.
+***Bold italic***. And `inline code` in the middle of a sentence.
 
-## Списки
+## Lists
 
-### Неупорядоченный список
+### Unordered list
 
-- Первый элемент
-- Второй элемент
-  - Вложенный элемент
-  - Ещё один вложенный
-- Третий элемент
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
 
-### Упорядоченный список
+### Ordered list
 
-1. Шаг первый
-2. Шаг второй
-   1. Подшаг 2.1
-   2. Подшаг 2.2
-3. Шаг третий
+1. Step one
+2. Step two
+   1. Substep 2.1
+   2. Substep 2.2
+3. Step three
 
-## Цитата
+## Blockquote
 
-> Markdown — это язык разметки, созданный Джоном Грубером в 2004 году.
-> Его цель — сделать написание текста для веба максимально простым
-> и читаемым даже в исходном виде.
+> Markdown is a markup language created by John Gruber in 2004.
+> Its goal is to make writing for the web as simple
+> and readable as possible, even in its raw form.
 >
-> > Вложенная цитата для демонстрации.
+> > Nested quote for demonstration.
 
-## Блок кода
+## Code block
 
-Пример на Python:
+Python example:
 
 ```python
 from datetime import datetime
 
 def create_slug(title: str) -> str:
-    """Создаёт URL-совместимый слаг из заголовка."""
+    """Creates a URL-friendly slug from a title."""
     return title.lower().replace(' ', '-')
 
-slug = create_slug("Привет, мир")
-print(f"Слаг: {slug}")
+slug = create_slug("Hello, World")
+print(f"Slug: {slug}")
 date = datetime.now().strftime("%Y-%m-%d")
-print(f"Дата: {date}")
+print(f"Date: {date}")
 ```
 
-## Горизонтальная черта
+## Horizontal rule
 
 ---
 
-## Таблица
+## Table
 
-| Элемент        | Синтаксис              | Пример               |
-|----------------|------------------------|----------------------|
-| Заголовок h2   | `## Текст`            | ## Раздел           |
-| Жирный         | `**текст**`            | **текст**           |
-| Курсив         | `*текст*`             | *текст*             |
-| Код            | `` `код` ``           | `код`               |
-| Ссылка         | `[текст](url)`        | [ссылка](/p/hello-world/) |
-| Изображение     | `![alt](src)`         | ![Логотип](/favicon.svg) |
+| Element       | Syntax                 | Example              |
+|---------------|------------------------|----------------------|
+| Heading h2    | `## Text`             | ## Section          |
+| Bold          | `**text**`            | **text**            |
+| Italic        | `*text*`              | *text*              |
+| Code          | `` `code` ``          | `code`              |
+| Link          | `[text](url)`         | [link](/p/hello-world/) |
+| Image         | `![alt](src)`         | ![Logo](/favicon.svg) |
 
-## Изображение
+## Image
 
-![Логотип проекта](/favicon.svg)
+![Project logo](/favicon.svg)
 
-## Сноски
+## Footnotes
 
-Вот пример текста со сноской[^1]. Обратите внимание, как сноска отображается
-в данной теме.
+Here's an example of text with a footnote[^1]. Notice how the footnote is rendered
+in this theme.
 
-[^1]: Это сноска, которая должна отображаться как маргинальная заметка.
+[^1]: This is a footnote that should display as a marginal note.
 
-## Ссылки
+## Links
 
-- Перейти к посту [«Привет, мир»](/p/hello-world/)
-- Вернуться в [блог](/p/)
-- Посмотреть [вики-заметки](/w/)
+- Go to the post [«Hello, World»](/p/hello-world/)
+- Back to the [blog](/p/)
+- View [wiki notes](/w/)

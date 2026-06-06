@@ -1,35 +1,35 @@
 +++
-title = "Связи и ссылки"
+title = "Links and Backlinks"
 date = 2024-03-10
 +++
 
-Этот пост посвящён **системе обратных ссылок** (backlinks) в теме Zola 4779.
-Обратные ссылки автоматически собирают все страницы, которые ссылаются на
-текущую страницу, и отображают их в боковой панели или подвале.
+This post is about the **backlinks system** in the Zola 4779 theme.
+Backlinks automatically collect all pages that link to the current page
+and display them in the sidebar or footer.
 
-## Зачем нужны обратные ссылки
+## Why backlinks matter
 
-В концепции *цифрового сада* обратные ссылки играют ключевую роль:
+In the *digital garden* concept, backlinks play a key role:
 
-1. Они показывают, *как* разные заметки связаны между собой
-2. Позволяют *обнаруживать* неожиданные связи
-3. Создают *сеть знаний*, а не просто набор изолированных страниц
+1. They show *how* different notes are connected
+2. They help *discover* unexpected connections
+3. They create a *knowledge network*, not just a set of isolated pages
 
-## Связанные страницы
+## Related pages
 
-Этот пост ссылается на несколько других страниц на сайте:
+This post links to several other pages on the site:
 
-- [Привет, мир](/p/hello-world/) — первый пост в блоге
-- [Возможности Markdown](/p/markdown-test/) — обзор синтаксиса Markdown
-- [Тестовая заметка](/w/test-note/) — вики-заметка для тестирования связей
+- [Hello, World](/p/hello-world/) — the first blog post
+- [Markdown Features](/p/markdown-test/) — an overview of Markdown syntax
+- [Test Note](/w/test-note/) — a wiki note for testing connections
 
-Проверьте: на каждой из этих страниц должна появиться **обратная ссылка**
-на текущий пост.
+Check each of these pages — they should all show a **backlink**
+pointing to this post.
 
-## Как это работает
+## How it works
 
 ```javascript
-// Псевдокод: сбор обратных ссылок
+// Pseudocode: backlink collection
 const backlinks = {};
 
 for (const page of allPages) {
@@ -42,8 +42,8 @@ for (const page of allPages) {
 }
 ```
 
-## Заключение
+## Conclusion
 
-Обратные ссылки — одна из ключевых функций темы. Они превращают обычный блог
-в *сеть взаимосвязанных заметок*, где каждая страница обогащается контекстом
-из других страниц.
+Backlinks are one of the key features of this theme. They turn an ordinary blog
+into a *network of interconnected notes*, where each page is enriched with
+context from other pages.

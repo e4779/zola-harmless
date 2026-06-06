@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Graph page', () => {
   test('loads with D3 graph and SVG', async ({ page }) => {
     await page.goto('/graph/');
-    await expect(page.locator('h1:has-text("Граф")')).toBeVisible();
+    await expect(page.locator('h1:has-text("Graph")')).toBeVisible();
     // D3 renders SVG inside #graph div
     await expect(page.locator('#graph svg')).toBeVisible();
   });

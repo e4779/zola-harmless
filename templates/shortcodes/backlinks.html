@@ -1,3 +1,4 @@
+{%- import "macros/translate.html" as macros -%}
 {#- Backlinks — renders pages that link to the current page -#}
 {%- set map = load_data(path="static/backlinks.json", format="json", required=false) -%}
 {%- if map -%}
@@ -11,7 +12,7 @@
     }
 </style>
 <nav class="backlinks" aria-label="Backlinks">
-  <h3>Ссылки сюда</h3>
+  <h3>{{ macros::translate(key="backlinks", default="Backlinks") }}</h3>
   <ul>
       {%- for src in sources %}
       {%- set srcPath = src.path | default(value=src) -%}

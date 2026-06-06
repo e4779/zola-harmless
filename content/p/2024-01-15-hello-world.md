@@ -1,49 +1,49 @@
 +++
-title = "Привет, мир"
+title = "Hello, World"
 date = 2024-01-15
 +++
 
-Это первый пост в моём **цифровом саду**. Идея цифрового сада отличается от
-традиционного блога: здесь заметки не публикуются в законченном виде, а *растут*
-со временем, как настоящие растения.
+This is the first post in my **digital garden**. The idea of a digital garden differs from
+a traditional blog: notes aren't published in a finished state, but *grow*
+over time, like real plants.
 
-## Что такое цифровой сад
+## What is a digital garden
 
-Цифровой сад — это метафора для личного пространства знаний, где:
+A digital garden is a metaphor for a personal knowledge space where:
 
-- Заметки постоянно **дорабатываются** и дополняются
-- Между заметками создаются *связи* и перекрёстные ссылки
-- Нет строгой хронологии — только структура знаний
+- Notes are constantly **refined** and expanded
+- *Connections* and cross-references are created between notes
+- There's no strict chronology — only a knowledge structure
 
-> Цифровой сад — это не блог и не вики. Это нечто среднее: личное пространство
-> для выращивания идей.
+> A digital garden is neither a blog nor a wiki. It's something in between: a personal space
+> for growing ideas.
 >
-> — Адаптация идеи Майка Колфилда
+> — Adapted from Mike Caulfield's idea
 
-### Инструменты для цифрового сада
+### Tools for digital gardening
 
-Вот несколько популярных инструментов для создания цифровых садов:
+Here are a few popular tools for creating digital gardens:
 
-1. **Zola** — генератор статических сайтов на Rust (именно он используется здесь)
-2. **Obsidian** — редактор заметок с поддержкой графов
-3. **Roam Research** — инструмент для networked thinking
-4. **Logseq** — открытая альтернатива Roam
+1. **Zola** — a static site generator in Rust (that's what this site uses)
+2. **Obsidian** — a note editor with graph support
+3. **Roam Research** — a tool for networked thinking
+4. **Logseq** — an open alternative to Roam
 
-#### Языки разметки
+#### Markup languages
 
-| Язык      | Применение              |
-|-----------|-------------------------|
-| Markdown  | Основной формат заметок |
-| TOML      | Метаданные (frontmatter)|
-| HTML      | Шаблоны темы            |
+| Language   | Usage                   |
+|------------|-------------------------|
+| Markdown   | Primary note format     |
+| TOML       | Metadata (frontmatter)  |
+| HTML       | Theme templates         |
 
-## Код
+## Code
 
-Пример простого скрипта для создания новой заметки:
+Example script for creating a new note:
 
 ```bash
 #!/bin/bash
-# Создание новой заметки в Zola
+# Create a new Zola note
 TITLE="$1"
 SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 DATE=$(date +%Y-%m-%d)
@@ -54,8 +54,8 @@ date = $DATE
 +++
 
 EOF
-echo "Заметка создана: content/w/$DATE-$SLUG.md"
+echo "Note created: content/w/$DATE-$SLUG.md"
 ```
 
-Подробнее о возможностях Markdown читайте в посте
-[«Возможности Markdown»](/p/markdown-test/).
+Read more about Markdown features in the post
+[«Markdown Features»](/p/markdown-test/).

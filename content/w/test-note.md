@@ -1,44 +1,44 @@
 +++
-title = "Тестовая заметка"
+title = "Test Note"
 date = 2024-01-10
 +++
 
-Это **тестовая вики-заметка**, созданная для проверки системы обратных ссылок
-и перекрёстных связей между разделами сайта.
+This is a **test wiki note**, created to verify the backlinks system
+and cross-references between site sections.
 
-## Разделы сайта
+## Site sections
 
-Тема Zola 4779 поддерживает два основных раздела с контентом:
+The Zola 4779 theme supports two main content sections:
 
-1. **Блог** (`/p/`) — хронологические посты
-2. **Вики** (`/w/`) — тематические заметки
+1. **Blog** (`/p/`) — chronological posts
+2. **Wiki** (`/w/`) — topical notes
 
-Каждый раздел использует свой шаблон, но все страницы участвуют в единой
-системе обратных ссылок.
+Each section uses its own template, but all pages participate in the same
+backlinks system.
 
-### Преимущества разделения
+### Benefits of separation
 
-- **Блог** удобен для последовательного чтения
-- **Вики** удобна для *исследования* и навигации по темам
+- **Blog** is convenient for sequential reading
+- **Wiki** is convenient for *exploration* and topic navigation
 
-> Разделение на блог и вики позволяет совместить достоинства обоих форматов.
+> Separating blog and wiki combines the strengths of both formats.
 
-## Связь с другими страницами
+## Connections to other pages
 
-Эта заметка связана с блогом через пост
-[«Связи и ссылки»](/p/links-and-backlinks/), который ссылается на неё.
+This note is linked to the blog via the post
+[«Links and Backlinks»](/p/links-and-backlinks/), which references it.
 
-## Небольшой список идей
+## A small list of ideas
 
-- Использовать теги для категоризации
-- Добавить Mermaid-диаграммы
-- Создать граф связей между заметками
+- Use tags for categorization
+- Add Mermaid diagrams
+- Create a graph of connections between notes
 
 ```yaml
-# Пример конфигурации связей
+# Example link configuration
 links:
   - target: "/p/links-and-backlinks/"
-    type: "упоминание"
+    type: "mention"
   - target: "/w/another-note/"
-    type: "соседняя заметка"
+    type: "neighbouring note"
 ```
