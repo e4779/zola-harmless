@@ -5,7 +5,7 @@ ZOLA        := $(BIN_DIR)/zola
 export PATH := $(BIN_DIR):$(PATH)
 export DEV_PORT ?= 1111
 
-.PHONY: deps build dev test clean
+.PHONY: deps build dev test lint clean
 
 deps: zola node-deps
 	@echo "[OK] All dependencies ready"
@@ -44,6 +44,9 @@ dev: build
 
 test: node-deps
 	DEV_PORT=$(DEV_PORT) npm test
+
+lint:
+	@node scripts/validate-titles.js
 
 clean:
 	rm -rf public/ .zola/

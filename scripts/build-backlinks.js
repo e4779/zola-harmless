@@ -67,10 +67,13 @@ for (const srcFile of htmlFiles) {
   // Extract title
   const titleMatch = html.match(/<title>([^<]*)<\/title>/);
   if (titleMatch) {
-    const rawTitle = titleMatch[1].trim();
-    // Strip site suffix: " — 4779" or " | e4779 - заметки"
-    const title = rawTitle.replace(/\s[—|-]\s[^|]+$/, '').trim();
-    pageTitles.set(srcUrl, title);
+    let rawTitle = titleMatch[1].trim();
+    // Strip site suffix: " — 4779" or " | site title"
+    // Handle both "Page Title — Site" and bare "— Site" (missing page title)
+    rawTitle = rawTitle.replace(/(^|\s)[—|-]\s.+$/, '').trim();
+    if (rawTitle) {
+      pageTitles.set(srcUrl, rawTitle);
+    }
   }
 
   // Extract all <a href="..."> links (handles quoted and unquoted — Zola minification strips quotes)

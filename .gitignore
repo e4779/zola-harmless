@@ -3,4 +3,5 @@ public/
 node_modules/
 test-results/
 playwright-report/
-public/
+static/backlinks.json
+static/build.json

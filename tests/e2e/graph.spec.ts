@@ -24,6 +24,17 @@ test.describe('Graph page', () => {
     expect(bl.ok()).toBeTruthy();
   });
   
+  test('graph nodes do not show fallback site title', async ({ page }) => {
+    await page.goto('/graph/');
+    await page.waitForSelector('#graph svg a.node', { timeout: 10000 });
+    // Collect all node text labels
+    const labels = await page.locator('#graph svg a.node').allTextContents();
+    // None should be bare "— SITETITLE" (missing page title fallback)
+    for (const label of labels) {
+      expect(label.trim()).not.toMatch(/^—\s/);
+    }
+  });
+
   test('graph fits within viewport', async ({ page }) => {
     await page.goto('/graph/');
     await expect(page.locator('#graph svg')).toBeVisible({ timeout: 5000 });
